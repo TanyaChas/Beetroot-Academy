@@ -1,0 +1,58 @@
+.body {
+    background-color: aliceblue;
+}
+
+header {
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 50px;
+}
+
+header .p {
+    font-size: 14px;
+    font-weight: normal;
+    font-weight: bold;
+}
+
+header .h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #0ec8cb;
+}
+
+header .p1 {
+    font-size: 14px;
+    font-weight: normal;
+    color: #999;
+    padding: 2% 21.5%;
+}
+
+body .div_bar {
+    font-size: 16px;
+    background: #f7f7f7f7;
+    text-align: center;
+    display: inline-flex;
+    justify-content: space-around;
+    gap: 20px
+}
+
+body div .Anchor {
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+
+body div .Diamond {
+    background: #0ec8cb;
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+
+body div .Eyeglas {
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+
+body div .Monitor {
+    padding-top: 60px;
+    padding-bottom: 100px;
+}

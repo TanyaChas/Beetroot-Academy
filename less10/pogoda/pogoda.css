@@ -1,0 +1,129 @@
+html {
+    background-color: rgb(54, 50, 241);
+}
+
+body {
+    background-color: rgb(59, 147, 230);
+}
+
+div {
+    display: block;
+    color: wheat;
+}
+
+body div .text {
+    text-align: center;
+    padding-top: 25px;
+}
+
+body div .table {
+    width: 700px;
+    border-color: white;
+    text-align: center;
+    border: 5px solid white;
+    margin: auto;
+    font-size: 18px;
+}
+
+body div .table_1 {
+    display: inline-block;
+    width: 100%;
+}
+
+body div .Lisabon {
+    width: 250px;
+    border-left: 1px;
+    background-color: rgb(78, 189, 223);
+    padding: 20px;
+    border: 1px solid white;
+}
+
+body div .Paris {
+    width: 190px;
+    background-color: rgb(9, 174, 250);
+    border: 1px solid white;
+}
+
+body div .Belgrade {
+    width: 170px;
+    background-color: rgb(234, 0, 255);
+    padding: 20px;
+    border: 1px solid white;
+}
+
+body div .table_2 {
+    display: inline-block;
+    width: 100%;
+}
+
+body div .Moscow {
+    width: 150px;
+    background-color: rgb(221, 28, 28);
+    padding: 20px;
+    border: 1px solid white;
+}
+
+body div .TV {
+    width: 150px;
+    background-color: rgb(224, 83, 17);
+    padding: 20px;
+    border: 1px solid white;
+}
+
+body div .Cair {
+    width: 150px;
+    background-color: rgb(189, 192, 7);
+    padding: 20px;
+    border: 1px solid white;
+}
+
+body div .NY {
+    width: 150px;
+    background-color: rgb(94, 155, 88);
+    padding: 20px;
+    border: 1px solid white;
+}
+
+body div .table_3 {
+    display: inline-block;
+    width: 100%;
+}
+
+body div .ND {
+    width: 200px;
+    background-color: rgb(47, 160, 135);
+    padding: 20px;
+    border: 1px solid white;
+}
+
+body div .SF {
+    width: 600px;
+    background-color: rgb(133, 49, 95);
+    padding: 20px;
+    border: 1px solid white;
+}
+
+body div .Tokyo {
+    width: 200px;
+    background-color: rgb(21, 107, 54);
+    padding: 20px;
+    border: 1px solid white;
+}
+
+body div .table_4 {
+    display: inline-block;
+    width: 100%;
+}
+
+body div .Sydney {
+    width: 1000px;
+    background-color: rgb(132, 70, 190);
+    padding: 20px;
+    border: 1px solid white;
+}
+
+body div .footer_text {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 70px;
+}
