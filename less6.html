@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html> <!-- ошибка тут -->
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
     <title>Beetroot page</title>
-    <style>
+    <style> /* начинай разделять хтмл и стили */
         .body {
             background-color: rgb(19, 18, 18);
         }
@@ -12,7 +12,7 @@
             display: block;
             padding: 10px;
             background-color: grey;
-            width: 100;
+            width: 100; /*единици измерения*/
             color: rgb(248, 126, 126);
             text-align: center;
             font-size: 30px;
@@ -31,7 +31,7 @@
             color: white;
             background-color: rgb(152, 152, 170);
             border: solid rgb(123, 139, 168);
-            font-size: 13px 0;
+            font-size: 13px 0; /* ошибка */
             font-weight: 600;
             padding: 20px 0px 0px 20px;
             text-align: left;
@@ -50,7 +50,7 @@
             display: block;
             padding: 10px;
             background-color: grey;
-            width: 100;
+            width: 100;/* ошибка */
             color: rgb(248, 126, 126);
             text-align: center;
             font-size: 15px;
@@ -59,15 +59,26 @@
     </style>
  </head>
 <body>
+<!-- Замечательно сделала :
+- Работает зачеркивание текста.
+- есть адаптив
+- подсветка при наведении
+- все елементы четко в своих блоках
+-->
     <header>  
-     <div class="bar">
+     <div class="bar"> <!-- div - тут как безполезная обертка можно было class="bar" просто добавить к тегу header -->
          <div>CSS Diner Shopping List</div>
          <p class="p">Let`s go to the mall!</p>
      </div>
      </header>
      <main>
          <div class="parent">
-         <section type="button" class="container"> 
+             <!-- у section - нету type Атрибута  -->
+         <section type="button" class="container">
+             <!-- выделение произхотит только при клике на чекбокс.
+                HTML - структура правельная.
+                но нужно было немного дочитать про label - http://htmlbook.ru/html/label
+             -->
              <input type="checkbox" class="strikethrough">
              <label>A lot of pictures (for the next lessons about CSS)</label>
         </section>
