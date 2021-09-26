@@ -1,0 +1,41 @@
+.g {
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.33, rgb(206, 214, 214)), color-stop(0.67, rgb(239, 247, 247)));
+    padding: 2px;
+}
+
+.g>div {
+    background: #fff;
+}
+
+.text {
+    display: block;
+    padding: 10px;
+    background-color: rgb(252, 250, 250);
+    width: 875px;
+    color: rgb(153, 147, 147);
+    text-align: left;
+    font-size: 16px;
+    font-weight: 900;
+    margin: 0 auto;
+    border: 2px solid silver;
+    box-shadow: 5px 2px 15px 5px;
+}
+
+h2 {
+    color: black;
+}
+
+.p1 {
+    text-indent: 30px;
+}
+
+.btn {
+    font-size: 10px;
+    text-decoration: none;
+    color: #FF9900;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding: 10px;
+    letter-spacing: 0.2em;
+}
