@@ -1,16 +1,83 @@
-body {
-    padding: 0 100px;
+/*обнуление*/
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
 }
 
-header {
-    display: block;
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+html,
+body {
+    height: 100%;
+    line-height: 1;
+    font-size: 16px;
+    color: #000;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
+
+._container {
+    max-width: 1046px;
+    margin: 0px auto;
+}
+
+
+/*шапка*/
+
+.header {
     width: 100%;
-    padding: 0 100px;
-    box-sizing: border-box;
+    left: 0;
+    top: 0;
+    z-index: inherit;
+}
+
+.header_container {
+    display: flex;
+    min-height: 104px;
+    align-items: center;
+    margin: 0 0 0 200px;
+}
+
+@media (max-width: 992px) {
+    .header-container {
+        margin: 0 0 0 100px;
+    }
+}
+
+@media (max-width: 620px) {
+    .header-container {
+        margin: 0 0 0 50px;
+    }
+}
+
+@media (max-width: 610px) {
+    .header-container {
+        min-height: 85px;
+    }
 }
 
 header .header-logo {
     font-size: 30px;
+    font-weight: 700;
+    color: inherit;
     text-decoration: none;
 }
 
@@ -22,9 +89,28 @@ header a {
 }
 
 header nav {
-    display: inline block;
+    margin: 0 0 0 150px;
     width: 500px;
     float: right;
+    padding: 5px 0;
+}
+
+@media (max-width: 992px) {
+    .header-container {
+        margin: 0 0 0 100px;
+    }
+}
+
+@media (max-width: 767px) {
+    .header-container {
+        margin: 0 0 0 50px;
+    }
+}
+
+@media (max-width: 470px) {
+    .header-container {
+        margin: 0 0 0 20px;
+    }
 }
 
 header nav .header-sing-btn {
@@ -33,8 +119,26 @@ header nav .header-sing-btn {
     text-align: right;
 }
 
-main section .header {
+
+/*block 1*/
+
+.desing {
     display: flex;
+    -webkit-box-align: end;
+    -webkit-box-pack: center;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0 0 0 100px;
+}
+
+@media screen and (max-width: 850px) {
+    .desingt {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 0 0 50px;
+    }
 }
 
 main section .header_text {
@@ -44,10 +148,35 @@ main section .header_text {
     padding-top: 30px;
 }
 
+@media (max-width: 1200px) {
+    .header_text {
+        width: 100%;
+    }
+}
+
+@media (max-width: 850px) {
+    .header_text {
+        width: 100%;
+    }
+}
+
 main section .header_pic {
     display: block;
     width: 49%;
     float: right;
+    margin: 0 0 0 80px;
+}
+
+@media screen and (max-width: 1200px) {
+    .header_pic {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .header_pic {
+        width: 100%;
+    }
 }
 
 main section .header_text_h1 {
@@ -65,6 +194,7 @@ main section .header_text_p {
     padding-top: 30px;
     padding-bottom: 20px;
 }
+
 div .header_navbar_1 {
     font-size: 16px;
     border-radius: 3px;
@@ -74,36 +204,49 @@ div .header_navbar_1 {
     padding: 10px;
     margin-right: 25px;
 }
+
 main .header .header_text .header_btn {
-    font-size: 16px; 
-    text-decoration: none; 
+    font-size: 16px;
+    text-decoration: none;
     color: #FF9900;
     position: relative;
     padding-left: 20px;
 }
+
 main .header .header_text .header_btn .header_icon {
     position: absolute;
     top: 1px;
     left: 0px;
 }
-main section .feature {
+
+
+/*block2*/
+
+.feature {
     display: block;
+    margin: 0 0 0 100px;
 }
+
 main section .feature_h1 {
     display: inline-block;
     width: 100%;
     text-align: center;
+    padding-top: 30px;
+    padding-bottom: 50px;
 }
+
 main section .feature_bar {
     display: inline-flex;
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 20px
 }
+
 main section .feature_bar_p {
     width: 300px;
     word-wrap: break-word;
 }
+
 main section .feature_btn {
     font-size: 13px;
     border-radius: 3px;
@@ -113,45 +256,59 @@ main section .feature_btn {
     padding: 12px;
     /*margin-right: 30px;*/
 }
-main section .effortless_validation {
+
+.effortless_validation {
     display: inline-block;
+    width: 100%;
+    margin: 0 0 0 100px;
 }
+
 main section .EV_text {
     display: block;
     width: 49%;
     float: left;
     padding-top: 60px;
 }
+
 main section .EV_text_p_1 {
     display: block;
     font-size: 16px;
     width: 421px;
     /*font-family:poppins*/
 }
+
 main section .EV_text_p {
     font-size: 16px;
     width: 421px;
     /*font-family:poppins*/
     line-height: 28px;
 }
+
 main section .EV_text_h1 {
     font-size: 40px;
     font-weight: bold;
 }
+
 main section .EV_text_h4 {
     font-size: 16px;
     font-weight: bold;
 }
+
 main section .EV_pic {
     display: block;
     width: 49%;
     float: right;
     height: 200px;
-    padding-top: 60px;
 }
-main section .product_managers {
+
+
+/*block 3*/
+
+.product_managers {
     display: inline-block;
+    margin: 0 0 0 100px;
 }
+
 main section .PM_pic {
     display: block;
     width: 49%;
@@ -159,26 +316,31 @@ main section .PM_pic {
     clear: left;
     padding-top: 60px;
 }
+
 main section .PM_text {
     display: block;
     width: 49%;
     float: right;
-    padding-top: 60px;
+    padding-top: 180px;
 }
+
 main section .PM_text_p_1 {
     display: block;
     font-size: 16px;
     width: 421px;
     /*font-family:poppins*/
 }
+
 main section .PM_text_h1 {
     font-size: 40px;
     font-weight: bold;
 }
+
 main section .PM_text_icon {
     position: absolute;
     width: 27px;
 }
+
 main section .PM_text_p_icon {
     font-size: 16px;
     width: 421px;
@@ -186,36 +348,51 @@ main section .PM_text_p_icon {
     line-height: 28px;
     margin: 41px;
 }
-main section .marketers {
+
+
+/* block 4*/
+
+.marketers {
     display: inline-block;
+    width: 100%;
+    margin: 0 0 0 100px;
 }
+
 main section .marketers_text {
     display: block;
     width: 49%;
     float: left;
-    padding-top: 60px;
+    padding-top: 130px;
     clear: left;
 }
+
 main section .marketers_pic {
     display: block;
     width: 49%;
     float: right;
     padding-top: 60px;
 }
-body .footer {
+
+
+/* block 5*/
+
+.footer {
+    display: flex;
     clear: both;
     padding-top: 60px;
 }
-body .footer_logo {
-    display: block;
-    width: 25%;
 
-}
-body .footer_box {
+.footer_logo {
     display: block;
     width: 25%;
 }
-body .footer_btn {
+
+.footer_box {
+    display: block;
+    width: 25%;
+}
+
+.footer_btn {
     display: block;
     width: 25%;
 }
