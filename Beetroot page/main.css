@@ -169,13 +169,13 @@ main section .header_pic {
 
 @media screen and (max-width: 1200px) {
     .header_pic {
-        width: 100%;
+        display: none;
     }
 }
 
 @media screen and (max-width: 850px) {
     .header_pic {
-        width: 100%;
+        display: none;
     }
 }
 
