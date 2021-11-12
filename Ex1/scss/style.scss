@@ -1,5 +1,6 @@
+/* очень хорошо что все по отдельным файлам, и папкам */
 @import "./reset";
 @import "./fonts.scss";
-@import "./normalize";
+@import "./normalize"; /* выбирай чтото одно,  normalize или reset. Названия файлов говорят сами за себя.*/
 @import "./main.scss";
 @import "./resp.scss";

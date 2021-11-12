@@ -11,7 +11,42 @@
 </head>
 
 <body>
+<!--
+Мои коментарии удаляются после исправления !
+
+  + PixelPerfect :
+    - его нету. Даже больше того - работа не законченна и даже не похожа на дизайн.
+    - вокруг всего сайта белая каемка - ее не должно быть. Дизайнеры - иногда сами незнают что творят.
+  + Адаптив:
+    + проверять тоже нет смысла. Страница ломается на первом же медиа-адаптиве в 1450рх.(w-700%)
+     даже после исправления (w-700%) - адаптивом сложно назвать.
+  + БЕМ :
+    - какието названия есть -но структуры в scss стилях нету
+    - scss - структура вложенности - хорошая
+    + main.scss - стили написаны окуратно и красиво, при случае можно разобратся.
+        - возможности препроцессора небыли реализованы.(ни переменных, не елочной вложенности )
+        - очень хорошо что ты не верстала через position:absolute;
+  + cod-style:
+    - очень хорошо что все по отдельным файлам, и папкам
+
+  + other :
+    - помимо svg - попробуй использовать библиотеку иконок(https://habr.com/ru/company/edison/blog/481420/)
+    - нету мета тегов для СЕО
+    - .gitignore  - не рабочий. у етого файла нету названия... а только формат ".gitignore".
+    Поетому .gitignore1.txt - ето неправельное название  @Info: https://tyapk.ru/blog/post/gitignore
+-->
+
     <header class="header_container">
+        <!--
+          + PixelPerfect :
+            - работа не законченна, нет смысла проверять.
+            - поле поиска - без стилей
+            - кнопка поиска - без стилей
+          + Адаптив:
+          + БЕМ :
+            - нету. Добавил краткую теорию в main
+          + other :
+         -->
         <div class="header_info">
             <div class="info">
                 <div class="info1">
@@ -19,9 +54,9 @@
                         <a class="header_logo" href="/">Bhromaon</a>
                         <p class="header_description">Safe Travel Anywhere</p>
                     </div>
-                    <div class="heder_search">
+                    <div class="heder_search"> <!-- класс не правельный = heder-->
                         <div class="search_form">
-                            <label class="search_label" for="name">
+                            <label class="search_label" for="name"> <!--for - привязывается по id  -->
                              <input type="text" placeholder="Search Your Travel Destination">
                              </label>
                             <button class="search_btn" type="submit">submit
@@ -45,6 +80,15 @@
         </div>
     </header>
     <section class="section_1">
+        <!--
+          + PixelPerfect :
+            - блок текста сильно смещен к левому краю
+            - картинки - не выровненны
+            - кнопка маленькая
+          + Адаптив:
+          + БЕМ :
+            - немного похоже, но нет. Ето не бем.
+         -->
         <div class="section_1_bar">
             <div class="section_1_text">
                 <h1 class="section_1_h2">Why Choose Us</h1>
@@ -63,6 +107,15 @@
         </div>
     </section>
     <section class="section_2">
+        <!--
+          + PixelPerfect :
+            - если подставлять картинку - очень похоже
+            - цвет дуг - разный.
+          + Адаптив:
+            - нету
+          + БЕМ :
+            - немного похоже, но нет. Ето не бем.
+         -->
         <div class="graph">
             <div class="icon-row-flex">
                 <div class="icon-block">
@@ -83,6 +136,15 @@
         </div>
     </section>
     <section class="section_3">
+        <!--
+          + PixelPerfect :
+            - фоновая картинка искажена.
+            - блок, кнопка  - не поразмеру
+          + Адаптив:
+            - нету
+          + БЕМ :
+            - Ето не бем.
+         -->
         <div class="section_3_block">
             <div class="section_3_spain_bar">
                 <p class="spain_bar_p">Spain</p>
